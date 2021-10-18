@@ -1,0 +1,291 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "과제 week4 ",
+      "provenance": [],
+      "collapsed_sections": [],
+      "authorship_tag": "ABX9TyN6s5VrieVCzRO58fP2AuQU",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "display_name": "Python 3",
+      "name": "python3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/jinah123/jinah123/blob/main/%EA%B3%BC%EC%A0%9C_week4.ipynb%20\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "CoI2ZXCvMGUl"
+      },
+      "source": [
+        "condition"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "1LC28ksnL_sv"
+      },
+      "source": [
+        "문제1"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "flElRfweEaG7",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "683ceb27-65c7-4aa3-cbb8-50a1acafb986"
+      },
+      "source": [
+        "x = int(input(\"number:\"))\n",
+        "\n",
+        "if x==0:\n",
+        "  print(\"zero\")\n",
+        "elif x>0:\n",
+        "  print(\"plus\")\n",
+        "elif x<0:\n",
+        "  print(\"minus\")"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "number:0\n",
+            "zero\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "XmFsXurnNNZS"
+      },
+      "source": [
+        "문제 2 (1)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "m39ZWzwhNPJC",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "16be006c-2653-4e2d-8d6f-5b4d6706993a"
+      },
+      "source": [
+        "x = input(\"Capital letter:\")\n",
+        "\n",
+        "if x==\"A\":\n",
+        "  print(\"Excellent\")\n",
+        "elif x==\"B\":\n",
+        "  print(\"Good\")\n",
+        "elif x==\"C\":\n",
+        "  print(\"Usually\")\n",
+        "elif x==\"D\":\n",
+        "  print(\"Effort\")\n",
+        "elif x==\"F\":\n",
+        "  print(\"Failure\")\n",
+        "else:\n",
+        "  print(\"error\")"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Capital letter:B\n",
+            "Good\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "NhVtVOlIIw-G"
+      },
+      "source": [
+        "문제 3"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "oh-fuhaBIzLK",
+        "outputId": "83f06aeb-7f99-4d90-9ecc-01411a98dde2"
+      },
+      "source": [
+        "x = input(\"number:\")\n",
+        "\n",
+        "if x == \"1\":\n",
+        "  print(\"dog\")\n",
+        "elif x == \"2\":\n",
+        "  print(\"cat\")\n",
+        "elif x == \"3\":\n",
+        "  print(\"chick\")\n",
+        "else:\n",
+        "  print(\"I don\\'t know.\")"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "number:4\n",
+            "I don't know.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "WujXGYNi_FzQ"
+      },
+      "source": [
+        "문제 4"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "ESeY4ut9_DmG",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "f057c3d6-3e48-42d0-a882-a912a2f44def"
+      },
+      "source": [
+        "x =int(input(\"month:\")) \n",
+        "\n",
+        "if (x == 1 or x == 3 or x == 5 or x == 7 or x == 8 or x == 10 or x == 12):\n",
+        "  print(\"31일\")\n",
+        "elif (x == 4 or x == 6 or x == 9 or x == 11):\n",
+        "  print(\"30일\") \n",
+        "else: \n",
+        "  print(\"28일\")"
+      ],
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "month:12\n",
+            "31일\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "SDa3q1cn_VjN"
+      },
+      "source": [
+        "문제 5"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "0fWAx2wH_WiA",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "ab29e748-01d3-4ce2-a262-37c3be5c38ae"
+      },
+      "source": [
+        "x = input(\"gender:\")\n",
+        "y = input(\"age:\")\n",
+        "\n",
+        "if x == \"M\" and y>str(18):\n",
+        "  print(\"MAN\")\n",
+        "elif x == \"M\" and y<str(18):\n",
+        "  print(\"BOY\")\n",
+        "elif x == \"F\" and y>str(18):\n",
+        "  print(\"WOMAN\")\n",
+        "elif x == \"F\" and y<str(18):\n",
+        "  print(\"GIRL\")"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "gender:M\n",
+            "age:10\n",
+            "BOY\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "hjvV-rjz_XNk"
+      },
+      "source": [
+        "문제 6"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Q8FsFCKe_Yum",
+        "outputId": "53b0d07b-8f43-44d8-eade-4c8925e22842"
+      },
+      "source": [
+        "year = int(input(\"연도를 입력하시오: \"))\n",
+        "\n",
+        "if ((year % 4 ==0 and year % 100 != 0)or year % 400 ==0) :\n",
+        "  print(\"leap year\") \n",
+        "else :\n",
+        "  print(\"common year\")"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "연도를 입력하시오: 2008\n",
+            "leap year\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
